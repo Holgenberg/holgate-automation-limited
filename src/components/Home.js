@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "@fontsource/roboto-slab";
 import './Home.css'
 
 class Home extends Component {
