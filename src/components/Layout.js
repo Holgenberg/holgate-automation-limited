@@ -3,7 +3,7 @@ import React from 'react';
 import { slide as Menu } from 'react-burger-menu'
 import './BurgerMenu.css'
 
-export class Layout extends React.Component {
+class Layout extends React.Component {
 
   constructor(props) {
     super(props)
@@ -32,10 +32,10 @@ export class Layout extends React.Component {
         top: '36px'
       },
       bmBurgerBars: {
-        background: '#373a47'
+        background: 'white'
       },
       bmBurgerBarsHover: {
-        background: '#a90000'
+        background: 'black'
       },
       bmCrossButton: {
         height: '24px',
