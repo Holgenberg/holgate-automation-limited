@@ -74,6 +74,7 @@ class Layout extends React.Component {
           closeCallback={this.closeMenu.bind(this)}>
           <a id="home" href="/">Home</a>
           <a id="portfolio" href="/portfolio/">Portfolio</a>
+          <a id="skills" href="/skills/">Skills</a>
         </Menu>
         <Outlet />
       </>
