@@ -1,7 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu'
-import './BurgerMenu.css'
 
 class Layout extends React.Component {
 
@@ -74,6 +73,7 @@ class Layout extends React.Component {
           isOpen={this.state.menuOpen}
           closeCallback={this.closeMenu.bind(this)}>
           <a id="home" href="/">Home</a>
+          <a id="portfolio" href="/portfolio/">Portfolio</a>
         </Menu>
         <Outlet />
       </>
