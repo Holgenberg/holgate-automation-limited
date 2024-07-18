@@ -75,6 +75,7 @@ class Layout extends React.Component {
           <a id="home" href="/">Home</a>
           <a id="portfolio" href="/portfolio/">Portfolio</a>
           <a id="skills" href="/skills/">Skills</a>
+          <a id="contact" href="/contact/">Contact</a>
         </Menu>
         <Outlet />
       </>
