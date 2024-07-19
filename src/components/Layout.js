@@ -57,10 +57,11 @@ class Layout extends React.Component {
       },
       bmItemList: {
         color: '#b8b7ad',
-        padding: '0.8em'
+        padding: '0.8em',
+        maxheight: '95%'
       },
       bmItem: {
-        display: 'inline-block'
+        display: 'block',
       },
       bmOverlay: {
         background: 'rgba(0, 0, 0, 0.3)'
