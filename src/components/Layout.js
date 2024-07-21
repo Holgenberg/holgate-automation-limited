@@ -62,6 +62,7 @@ class Layout extends React.Component {
       },
       bmItem: {
         display: 'block',
+        textDecoration: 'none'
       },
       bmOverlay: {
         background: 'rgba(0, 0, 0, 0.3)'
