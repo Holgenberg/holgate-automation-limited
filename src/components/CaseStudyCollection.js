@@ -6,6 +6,7 @@ import StarlitLogo from '../images/starlit_logo.png'
 import GPSCAMLogo from '../images/gps_cam_logo.png'
 import DIGGSLogo from '../images/DIGGSIcon.png'
 import ImmersiveStudioLogo from '../images/immersive_studio_image.png'
+import PhilatelicLogo from '../images/philatelic.png'
 
 const CaseStudyCollection = () => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -31,6 +32,7 @@ const CaseStudyCollection = () => {
 	const nexPloreBulletPoints = ["CD/CI", "Amazon Web Services", "REST API's"];
 	const wardenBulletPoints = ["iOS Development", "Microsoft Azure", "SQL"];
 	const starlitBulletPoints = ["Android Development", "Deployment on Google Services", "Unity 3D"];
+	const philatelicBulletPoints = ["MariaDB/MySQL", "PHP", "Docker"];
 
 	console.log(windowWidth);
 
@@ -38,6 +40,13 @@ const CaseStudyCollection = () => {
 		return (
 			<div className="container">
 				<div className="row">
+					<div className="col-4">
+						<CaseStudy caseStudyImage={PhilatelicLogo}
+							title="Philatelic.co.uk"
+							brief="Custom-designed online store specializing in the sale of Great Britain and Commonwealth stamps and stationery"
+							bulletPoints={philatelicBulletPoints}
+						/>
+					</div>
 					<div className="col-4">
 						<CaseStudy caseStudyImage={ImmersiveStudioLogo}
 							title="Immersive Studio"
@@ -51,15 +60,15 @@ const CaseStudyCollection = () => {
 							brief="Networked Gear Inspection Solution connected to Renishaw Equator™s"
 							bulletPoints={diggsBulletPoints}
 						/>
-					</div>
+					</div>	
+				</div>
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={GPSCAMLogo}
 							title="GPS CAM"
 							brief="Computer Aided Manufacturing Solution for 5-Axis CNC of Gears"
 							bulletPoints={gpsCamBulletPoints} />
-					</div>					
-				</div>
-				<div className="row">
+					</div>		
 					<div className="col-4">
 						<CaseStudy caseStudyImage={NexGenLogo}
 							title="NexPlore"
@@ -72,7 +81,10 @@ const CaseStudyCollection = () => {
 							brief="Mobile App for Property Reviews in Belfast"
 							bulletPoints={wardenBulletPoints} />
 					</div>
-					<div className="col-4">
+					
+				</div>
+				<div className="row">
+				<div className="col-4">
 						<CaseStudy caseStudyImage={StarlitLogo}
 							title="Starlit"
 							brief="Endless Runner Mobile Game for Google Play Store"
