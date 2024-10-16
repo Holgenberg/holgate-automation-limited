@@ -22,9 +22,9 @@ const SkillsContainerCollection = () => {
 	const programmingLanguageSkills = ["C#", "Python", "C++", "Javascript", "C", "PHP"];
 	const microsoftTechnologySkills = [".NET", "ASP.NET", "Xamarin", "WPF", "Microsoft SQL"]
 	const cloudSkills = ["Azure DevOps", "Resource Groups", "AWS EC2", "Elastic Beanstalk", "S3", "CodeDeploy"]
-	const webSkills = ["RESTful APIs", "HTML", "CSS", "React.js", "WebGL"]
+	const webSkills = ["RESTful APIs", "HTML", "CSS", "React.js", "WebGL", "Wordpress", "Linux"]
 	const organisationalPractices = ["Scrum", "Unit Testing", "TDD/BDD", "Documentation Writing"]
-	const otherSkills = ["Git/GitHub", "OpenCV","OpenCascade", "Unity 3D"]
+	const otherSkills = ["Git/GitHub", "OpenCV","OpenCascade", "Unity 3D", "Docker"]
 
 	if (windowWidth > 768) {
 		return (
