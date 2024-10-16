@@ -98,6 +98,10 @@ const CaseStudyCollection = () => {
 	else {
 		return (
 			<div>
+				<CaseStudy caseStudyImage={PhilatelicLogo}
+							title="Philatelic.co.uk"
+							brief="Custom-designed online store specializing in the sale of Great Britain and Commonwealth stamps and stationery"
+							bulletPoints={philatelicBulletPoints} />						
 				<CaseStudy caseStudyImage={ImmersiveStudioLogo}
 					title="Immersive Studio"
 					brief="Augmented reality environments integrating multiple senses for educational purposes"
