@@ -7,6 +7,7 @@ import GPSCAMLogo from '../images/gps_cam_logo.png'
 import DIGGSLogo from '../images/DIGGSIcon.png'
 import ImmersiveStudioLogo from '../images/immersive_studio_image.png'
 import PhilatelicLogo from '../images/philatelic.png'
+import LondonBookAndMapLogo from '../images/london_book_and_map_logo.jpg'
 
 const CaseStudyCollection = () => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -33,6 +34,7 @@ const CaseStudyCollection = () => {
 	const wardenBulletPoints = ["iOS Development", "Microsoft Azure", "SQL"];
 	const starlitBulletPoints = ["Android Development", "Deployment on Google Services", "Unity 3D"];
 	const philatelicBulletPoints = ["MariaDB/MySQL", "PHP", "Docker"];
+	const londonBookAndMapBulletPoints = ["Jetpack", "WooCommerce", "Wordpress"];
 
 	console.log(windowWidth);
 
@@ -40,6 +42,13 @@ const CaseStudyCollection = () => {
 		return (
 			<div className="container">
 				<div className="row">
+					<div className="col-4">
+						<CaseStudy caseStudyImage={LondonBookAndMapLogo}
+							title="londonbookandmap.com"
+							brief="E-commerce store for Chinese texts and articles sourced within the United Kingdom"
+							bulletPoints={londonBookAndMapBulletPoints}
+						/>
+					</div>
 					<div className="col-4">
 						<CaseStudy caseStudyImage={PhilatelicLogo}
 							title="Philatelic.co.uk"
@@ -54,6 +63,8 @@ const CaseStudyCollection = () => {
 							bulletPoints={immersiveStudioBulletPoints}
 						/>
 					</div>
+				</div>
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={DIGGSLogo}
 							title="DIGGS"
@@ -61,8 +72,6 @@ const CaseStudyCollection = () => {
 							bulletPoints={diggsBulletPoints}
 						/>
 					</div>	
-				</div>
-				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={GPSCAMLogo}
 							title="GPS CAM"
@@ -74,21 +83,20 @@ const CaseStudyCollection = () => {
 							title="NexPlore"
 							brief="3D Asbestos Risk Visualization & Management Web App"
 							bulletPoints={nexPloreBulletPoints} />
+					</div>										
+				</div>
+				<div className="row">
+					<div className="col-4">
+						<CaseStudy caseStudyImage={StarlitLogo}
+							title="Starlit"
+							brief="Endless Runner Mobile Game for Google Play Store"
+							bulletPoints={starlitBulletPoints} />
 					</div>
 					<div className="col-4">
 						<CaseStudy caseStudyImage={WardenLogo}
 							title="Warden"
 							brief="Mobile App for Property Reviews in Belfast"
 							bulletPoints={wardenBulletPoints} />
-					</div>
-					
-				</div>
-				<div className="row">
-				<div className="col-4">
-						<CaseStudy caseStudyImage={StarlitLogo}
-							title="Starlit"
-							brief="Endless Runner Mobile Game for Google Play Store"
-							bulletPoints={starlitBulletPoints} />
 					</div>
 				</div>
 			</div>
@@ -98,10 +106,14 @@ const CaseStudyCollection = () => {
 	else {
 		return (
 			<div>
+				<CaseStudy caseStudyImage={LondonBookAndMapLogo}
+					title="londonbookandmap.com"
+					brief="E-commerce store for Chinese texts and articles sourced within the United Kingdom."
+					bulletPoints={londonBookAndMapBulletPoints} />
 				<CaseStudy caseStudyImage={PhilatelicLogo}
-							title="Philatelic.co.uk"
-							brief="Custom-designed online store specializing in the sale of Great Britain and Commonwealth stamps and stationery"
-							bulletPoints={philatelicBulletPoints} />						
+					title="Philatelic.co.uk"
+					brief="Custom-designed online store specializing in the sale of Great Britain and Commonwealth stamps and stationery"
+					bulletPoints={philatelicBulletPoints} />						
 				<CaseStudy caseStudyImage={ImmersiveStudioLogo}
 					title="Immersive Studio"
 					brief="Augmented reality environments integrating multiple senses for educational purposes"
