@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import CaseStudy from './CaseStudy.js'
-import NexGenLogo from '../images/nexgen_logo.png'
-import WardenLogo from '../images/warden_logo.png'
-import StarlitLogo from '../images/starlit_logo.png'
-import GPSCAMLogo from '../images/gps_cam_logo.png'
-import DIGGSLogo from '../images/DIGGSIcon.png'
-import ImmersiveStudioLogo from '../images/immersive_studio_image.png'
-import PhilatelicLogo from '../images/philatelic.png'
-import LondonBookAndMapLogo from '../images/london_book_and_map_logo.jpg'
+import CaseStudy from './CaseStudy.js';
+import NexGenLogo from '../images/nexgen_logo.png';
+import WardenLogo from '../images/warden_logo.png';
+import StarlitLogo from '../images/starlit_logo.png';
+import GPSCAMLogo from '../images/gps_cam_logo.png';
+import DIGGSLogo from '../images/DIGGSIcon.png';
+import ImmersiveStudioLogo from '../images/immersive_studio_image.png';
+import PhilatelicLogo from '../images/philatelic.png';
+import LondonBookAndMapLogo from '../images/london_book_and_map_logo.jpg';
+import OutlierLogo from '../images/outlier_logo.jpg';
 
 const CaseStudyCollection = () => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -34,6 +35,7 @@ const CaseStudyCollection = () => {
 	const wardenBulletPoints = ["iOS Development", "Microsoft Azure", "SQL"];
 	const starlitBulletPoints = ["Android Development", "Deployment on Google Services", "Unity 3D"];
 	const philatelicBulletPoints = ["MariaDB/MySQL", "PHP", "Docker"];
+	const outlierBulletPoints = ["Prompt Engineering", "Meta AI", "Large Language Models (LLMs)"]
 	const londonBookAndMapBulletPoints = ["Jetpack", "WooCommerce", "Wordpress"];
 
 	console.log(windowWidth);
@@ -42,11 +44,18 @@ const CaseStudyCollection = () => {
 		return (
 			<div className="container">
 				<div className="row">
-					<div className="col-4">
+					<div className="col-4">						
 						<CaseStudy caseStudyImage={LondonBookAndMapLogo}
 							title="londonbookandmap.com"
 							brief="E-commerce store for Chinese texts and articles sourced within the United Kingdom"
 							bulletPoints={londonBookAndMapBulletPoints}
+						/>
+					</div>
+					<div className='col-4'>
+						<CaseStudy caseStudyImage={OutlierLogo}
+							title="Outlier"
+							brief="Leveraged Prompt Engineering Techniques to Enhance Multiple LLMs, Including Meta AI"
+							bulletPoints={outlierBulletPoints}
 						/>
 					</div>
 					<div className="col-4">
@@ -56,6 +65,8 @@ const CaseStudyCollection = () => {
 							bulletPoints={philatelicBulletPoints}
 						/>
 					</div>
+				</div>									
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={ImmersiveStudioLogo}
 							title="Immersive Studio"
@@ -63,8 +74,6 @@ const CaseStudyCollection = () => {
 							bulletPoints={immersiveStudioBulletPoints}
 						/>
 					</div>
-				</div>
-				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={DIGGSLogo}
 							title="DIGGS"
@@ -77,15 +86,15 @@ const CaseStudyCollection = () => {
 							title="GPS CAM"
 							brief="Computer Aided Manufacturing Solution for 5-Axis CNC of Gears"
 							bulletPoints={gpsCamBulletPoints} />
-					</div>		
+					</div>	
+				</div>																
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={NexGenLogo}
 							title="NexPlore"
 							brief="3D Asbestos Risk Visualization & Management Web App"
 							bulletPoints={nexPloreBulletPoints} />
-					</div>										
-				</div>
-				<div className="row">
+					</div>
 					<div className="col-4">
 						<CaseStudy caseStudyImage={StarlitLogo}
 							title="Starlit"
@@ -110,6 +119,10 @@ const CaseStudyCollection = () => {
 					title="londonbookandmap.com"
 					brief="E-commerce store for Chinese texts and articles sourced within the United Kingdom."
 					bulletPoints={londonBookAndMapBulletPoints} />
+				<CaseStudy caseStudyImage={OutlierLogo}
+					title="Outlier"
+					brief="Leveraged Prompt Engineering Techniques to Enhance Multiple LLMs, Including Meta AI"
+					bulletPoints={outlierBulletPoints} />
 				<CaseStudy caseStudyImage={PhilatelicLogo}
 					title="Philatelic.co.uk"
 					brief="Custom-designed online store specializing in the sale of Great Britain and Commonwealth stamps and stationery"
