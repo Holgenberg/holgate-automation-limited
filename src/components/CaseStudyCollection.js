@@ -10,6 +10,7 @@ import PhilatelicLogo from '../images/philatelic.png';
 import LondonBookAndMapLogo from '../images/london_book_and_map_logo.jpg';
 import OutlierLogo from '../images/outlier_logo.jpg';
 import LimitlessCompetitionsLogo from '../images/limitless_competitions_logo.jpg';
+import ReinventLogo from '../images/reinvent_logo.png';
 
 const CaseStudyCollection = () => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -39,6 +40,7 @@ const CaseStudyCollection = () => {
 	const outlierBulletPoints = ["Prompt Engineering", "Meta AI", "Large Language Models (LLMs)"]
 	const londonBookAndMapBulletPoints = ["Jetpack", "WooCommerce", "Wordpress"];
 	const limitlessCompetitionsBulletPoints = ["Javascript", "HTML", "DNS Management"];
+	const reinventBulletPoints = ["Typescript", "React", "Amazon Cognito"];
 
 	if (windowWidth > 768) {
 		return (
@@ -66,7 +68,7 @@ const CaseStudyCollection = () => {
 						/>
 					</div>
 				</div>									
-				<div className="row">
+				<div className="row">					
 					<div className="col-4">
 						<CaseStudy caseStudyImage={PhilatelicLogo}
 							title="Philatelic.co.uk"
@@ -75,12 +77,21 @@ const CaseStudyCollection = () => {
 						/>
 					</div>
 					<div className="col-4">
+						<CaseStudy caseStudyImage={ReinventLogo}
+							title="Reinvent"
+							brief="AI-powered consultancy specializing in viral marketing strategies."
+							bulletPoints={reinventBulletPoints}
+						/>
+					</div>
+					<div className="col-4">
 						<CaseStudy caseStudyImage={ImmersiveStudioLogo}
 							title="Immersive Studio"
 							brief="Augmented reality environments integrating multiple senses for educational purposes"
 							bulletPoints={immersiveStudioBulletPoints}
 						/>
-					</div>
+					</div>					
+				</div>																
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={DIGGSLogo}
 							title="DIGGS"
@@ -88,9 +99,7 @@ const CaseStudyCollection = () => {
 							bulletPoints={diggsBulletPoints}
 						/>
 					</div>	
-				</div>																
-				<div className="row">
-				<div className="col-4">
+					<div className="col-4">
 						<CaseStudy caseStudyImage={GPSCAMLogo}
 							title="GPS CAM"
 							brief="Computer Aided Manufacturing Solution for 5-Axis CNC of Gears"
@@ -101,15 +110,15 @@ const CaseStudyCollection = () => {
 							title="NexPlore"
 							brief="3D Asbestos Risk Visualization & Management Web App"
 							bulletPoints={nexPloreBulletPoints} />
-					</div>
+					</div>					
+				</div>
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={StarlitLogo}
 							title="Starlit"
 							brief="Endless Runner Mobile Game for Google Play Store"
 							bulletPoints={starlitBulletPoints} />
 					</div>
-				</div>
-				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={WardenLogo}
 							title="Warden"
@@ -139,7 +148,11 @@ const CaseStudyCollection = () => {
 				<CaseStudy caseStudyImage={PhilatelicLogo}
 					title="Philatelic.co.uk"
 					brief="Custom-designed online store specializing in the sale of Great Britain and Commonwealth stamps and stationery"
-					bulletPoints={philatelicBulletPoints} />						
+					bulletPoints={philatelicBulletPoints} />	
+				<CaseStudy caseStudyImage={ReinventLogo}
+					title="Reinvent"
+					brief="AI-powered consultancy specializing in viral marketing strategies."
+					bulletPoints={philatelicBulletPoints} />					
 				<CaseStudy caseStudyImage={ImmersiveStudioLogo}
 					title="Immersive Studio"
 					brief="Augmented reality environments integrating multiple senses for educational purposes"

@@ -19,6 +19,8 @@
 	max-width: 100%;
 	height: auto;
 	display: block; /* Ensures image behaves as a block element */
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .textContainer {
