@@ -56,7 +56,7 @@ const CaseStudyCollection = () => {
 					<div className="col-4">						
 						<CaseStudy caseStudyImage={LondonBookAndMapLogo}
 							title="londonbookandmap.com"
-							brief="E-commerce store for Chinese texts and articles sourced within the United Kingdom"
+							brief="E-commerce store for historical texts and articles sourced within the United Kingdom"
 							bulletPoints={londonBookAndMapBulletPoints}
 						/>
 					</div>
