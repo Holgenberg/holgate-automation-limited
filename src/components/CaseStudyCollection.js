@@ -9,6 +9,7 @@ import ImmersiveStudioLogo from '../images/immersive_studio_image.png';
 import PhilatelicLogo from '../images/philatelic.png';
 import LondonBookAndMapLogo from '../images/london_book_and_map_logo.jpg';
 import OutlierLogo from '../images/outlier_logo.jpg';
+import LimitlessCompetitionsLogo from '../images/limitless_competitions_logo.jpg';
 
 const CaseStudyCollection = () => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -37,13 +38,19 @@ const CaseStudyCollection = () => {
 	const philatelicBulletPoints = ["MariaDB/MySQL", "PHP", "Docker"];
 	const outlierBulletPoints = ["Prompt Engineering", "Meta AI", "Large Language Models (LLMs)"]
 	const londonBookAndMapBulletPoints = ["Jetpack", "WooCommerce", "Wordpress"];
-
-	console.log(windowWidth);
+	const limitlessCompetitionsBulletPoints = ["Javascript", "HTML", "DNS Management"];
 
 	if (windowWidth > 768) {
 		return (
 			<div className="container">
 				<div className="row">
+					<div className="col-4">						
+						<CaseStudy caseStudyImage={LimitlessCompetitionsLogo}
+							title="limitless-competitions.co.uk"
+							brief="A digital raffle offering a selection of diverse prizes."
+							bulletPoints={limitlessCompetitionsBulletPoints}
+						/>
+					</div>
 					<div className="col-4">						
 						<CaseStudy caseStudyImage={LondonBookAndMapLogo}
 							title="londonbookandmap.com"
@@ -58,6 +65,8 @@ const CaseStudyCollection = () => {
 							bulletPoints={outlierBulletPoints}
 						/>
 					</div>
+				</div>									
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={PhilatelicLogo}
 							title="Philatelic.co.uk"
@@ -65,8 +74,6 @@ const CaseStudyCollection = () => {
 							bulletPoints={philatelicBulletPoints}
 						/>
 					</div>
-				</div>									
-				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={ImmersiveStudioLogo}
 							title="Immersive Studio"
@@ -81,14 +88,14 @@ const CaseStudyCollection = () => {
 							bulletPoints={diggsBulletPoints}
 						/>
 					</div>	
-					<div className="col-4">
+				</div>																
+				<div className="row">
+				<div className="col-4">
 						<CaseStudy caseStudyImage={GPSCAMLogo}
 							title="GPS CAM"
 							brief="Computer Aided Manufacturing Solution for 5-Axis CNC of Gears"
 							bulletPoints={gpsCamBulletPoints} />
 					</div>	
-				</div>																
-				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={NexGenLogo}
 							title="NexPlore"
@@ -101,6 +108,8 @@ const CaseStudyCollection = () => {
 							brief="Endless Runner Mobile Game for Google Play Store"
 							bulletPoints={starlitBulletPoints} />
 					</div>
+				</div>
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={WardenLogo}
 							title="Warden"
@@ -115,6 +124,10 @@ const CaseStudyCollection = () => {
 	else {
 		return (
 			<div>
+				<CaseStudy caseStudyImage={LimitlessCompetitionsLogo}
+					title="limitless-competitions.co.uk"
+					brief="A digital raffle offering a selection of diverse prizes."
+					bulletPoints={limitlessCompetitionsBulletPoints} />
 				<CaseStudy caseStudyImage={LondonBookAndMapLogo}
 					title="londonbookandmap.com"
 					brief="E-commerce store for Chinese texts and articles sourced within the United Kingdom."
