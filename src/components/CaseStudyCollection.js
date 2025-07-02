@@ -12,6 +12,7 @@ import OutlierLogo from '../images/outlier_logo.jpg';
 import LimitlessCompetitionsLogo from '../images/limitless_competitions_logo.jpg';
 import ReinventLogo from '../images/reinvent_logo.png';
 import DGSStatuesLogo from '../images/dgs_logo.png';
+import InductosenseLogo from '../images/inductosense.jpg';
 
 const CaseStudyCollection = () => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -38,16 +39,24 @@ const CaseStudyCollection = () => {
 	const wardenBulletPoints = ["iOS Development", "Microsoft Azure", "SQL"];
 	const starlitBulletPoints = ["Android Development", "Deployment on Google Services", "Unity 3D"];
 	const philatelicBulletPoints = ["MariaDB/MySQL", "PHP", "Docker"];
-	const outlierBulletPoints = ["Prompt Engineering", "Meta AI", "Large Language Models (LLMs)"]
+	const outlierBulletPoints = ["Prompt Engineering", "Meta AI", "Large Language Models (LLMs)"];
 	const londonBookAndMapBulletPoints = ["Jetpack", "WooCommerce", "Wordpress"];
 	const limitlessCompetitionsBulletPoints = ["Javascript", "HTML", "DNS Management"];
 	const reinventBulletPoints = ["Typescript", "React", "Amazon Cognito"];
-	const dgsStatuesBulletPoints = ["Shopify", "AWS Lambda", "AWS SQS"]
+	const dgsStatuesBulletPoints = ["Shopify", "AWS Lambda", "AWS SQS"];
+	const inductosenseBulletPoints = ["Blazor", "Kubernetes", "MAUI"];
 
 	if (windowWidth > 768) {
 		return (
 			<div className="container">
 				<div className="row">
+					<div className="col-4">						
+						<CaseStudy caseStudyImage={InductosenseLogo}
+							title="iDART"
+							brief="Oil & Gas microservices application developed with .NET and Kubernetes."
+							bulletPoints={inductosenseBulletPoints}
+						/>
+					</div>
 					<div className="col-4">						
 						<CaseStudy caseStudyImage={DGSStatuesLogo}
 							title="dgsstatues.co.uk"
@@ -61,7 +70,9 @@ const CaseStudyCollection = () => {
 							brief="A digital raffle offering a selection of diverse prizes."
 							bulletPoints={limitlessCompetitionsBulletPoints}
 						/>
-					</div>
+					</div>					
+				</div>									
+				<div className="row">	
 					<div className="col-4">						
 						<CaseStudy caseStudyImage={LondonBookAndMapLogo}
 							title="londonbookandmap.com"
@@ -69,8 +80,6 @@ const CaseStudyCollection = () => {
 							bulletPoints={londonBookAndMapBulletPoints}
 						/>
 					</div>
-				</div>									
-				<div className="row">	
 					<div className='col-4'>
 						<CaseStudy caseStudyImage={OutlierLogo}
 							title="Outlier"
@@ -84,16 +93,16 @@ const CaseStudyCollection = () => {
 							brief="Custom-designed online store specializing in the sale of Great Britain and Commonwealth stamps and stationery"
 							bulletPoints={philatelicBulletPoints}
 						/>
-					</div>
+					</div>								
+				</div>																
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={ReinventLogo}
 							title="Reinvent"
 							brief="AI-powered consultancy specializing in viral marketing strategies."
 							bulletPoints={reinventBulletPoints}
 						/>
-					</div>				
-				</div>																
-				<div className="row">
+					</div>	
 					<div className="col-4">
 						<CaseStudy caseStudyImage={ImmersiveStudioLogo}
 							title="Immersive Studio"
@@ -107,15 +116,15 @@ const CaseStudyCollection = () => {
 							brief="Networked Gear Inspection Solution connected to Renishaw Equator™s"
 							bulletPoints={diggsBulletPoints}
 						/>
-					</div>	
+					</div>										
+				</div>
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={GPSCAMLogo}
 							title="GPS CAM"
 							brief="Computer Aided Manufacturing Solution for 5-Axis CNC of Gears"
 							bulletPoints={gpsCamBulletPoints} />
-					</div>					
-				</div>
-				<div className="row">
+					</div>	
 					<div className="col-4">
 						<CaseStudy caseStudyImage={NexGenLogo}
 							title="NexPlore"
@@ -127,13 +136,15 @@ const CaseStudyCollection = () => {
 							title="Starlit"
 							brief="Endless Runner Mobile Game for Google Play Store"
 							bulletPoints={starlitBulletPoints} />
-					</div>
+					</div>					
+				</div>
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={WardenLogo}
 							title="Warden"
 							brief="Mobile App for Property Reviews in Belfast"
 							bulletPoints={wardenBulletPoints} />
-					</div>
+					</div>					
 				</div>
 			</div>
 		)
@@ -142,6 +153,10 @@ const CaseStudyCollection = () => {
 	else {
 		return (
 			<div>
+				<CaseStudy caseStudyImage={InductosenseLogo}
+					title="iDART"
+					brief="Oil & Gas microservices application developed with .NET and Kubernetes."
+					bulletPoints={inductosenseBulletPoints} />
 				<CaseStudy caseStudyImage={LimitlessCompetitionsLogo}
 					title="limitless-competitions.co.uk"
 					brief="A digital raffle offering a selection of diverse prizes."
