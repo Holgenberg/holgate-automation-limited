@@ -13,6 +13,7 @@ import LimitlessCompetitionsLogo from '../images/limitless_competitions_logo.jpg
 import ReinventLogo from '../images/reinvent_logo.png';
 import DGSStatuesLogo from '../images/dgs_logo.png';
 import InductosenseLogo from '../images/inductosense.jpg';
+import Integrity360Logo from '../images/integrity_360.jpg';
 
 const CaseStudyCollection = () => {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -45,11 +46,19 @@ const CaseStudyCollection = () => {
 	const reinventBulletPoints = ["Typescript", "React", "Amazon Cognito"];
 	const dgsStatuesBulletPoints = ["Shopify", "AWS Lambda", "AWS SQS"];
 	const inductosenseBulletPoints = ["Blazor", "Kubernetes", "MAUI"];
+	const integrity360BulletPoints = ["SonarQube", "Azure DevOps", "Delphi"];
 
 	if (windowWidth > 768) {
 		return (
 			<div className="container">
 				<div className="row">
+					<div className='col-4'>
+						<CaseStudy caseStudyImage={Integrity360Logo}
+							title="Integrity 360"
+							brief="We perform security code reviews for various Delphi applications, utilizing SonarQube and additional specialized tools."
+							bulletPoints={integrity360BulletPoints}
+						/>
+					</div>
 					<div className="col-4">						
 						<CaseStudy caseStudyImage={InductosenseLogo}
 							title="iDART"
@@ -63,16 +72,16 @@ const CaseStudyCollection = () => {
 							brief="DevOps integrations with external marketplaces such as Mirakl for a Shopify site."
 							bulletPoints={dgsStatuesBulletPoints}
 						/>
-					</div>
+					</div>									
+				</div>									
+				<div className="row">	
 					<div className="col-4">						
 						<CaseStudy caseStudyImage={LimitlessCompetitionsLogo}
 							title="limitless-competitions.co.uk"
 							brief="A digital raffle offering a selection of diverse prizes."
 							bulletPoints={limitlessCompetitionsBulletPoints}
 						/>
-					</div>					
-				</div>									
-				<div className="row">	
+					</div>	
 					<div className="col-4">						
 						<CaseStudy caseStudyImage={LondonBookAndMapLogo}
 							title="londonbookandmap.com"
@@ -86,16 +95,16 @@ const CaseStudyCollection = () => {
 							brief="Leveraged Prompt Engineering Techniques to Enhance Multiple LLMs, Including Meta AI"
 							bulletPoints={outlierBulletPoints}
 						/>
-					</div>				
+					</div>																	
+				</div>																
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={PhilatelicLogo}
 							title="Philatelic.co.uk"
 							brief="Custom-designed online store specializing in the sale of Great Britain and Commonwealth stamps and stationery"
 							bulletPoints={philatelicBulletPoints}
 						/>
-					</div>								
-				</div>																
-				<div className="row">
+					</div>
 					<div className="col-4">
 						<CaseStudy caseStudyImage={ReinventLogo}
 							title="Reinvent"
@@ -109,16 +118,15 @@ const CaseStudyCollection = () => {
 							brief="Augmented reality environments integrating multiple senses for educational purposes"
 							bulletPoints={immersiveStudioBulletPoints}
 						/>
-					</div>	
+					</div>															
+				</div>
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={DIGGSLogo}
 							title="DIGGS"
 							brief="Networked Gear Inspection Solution connected to Renishaw Equator™s"
-							bulletPoints={diggsBulletPoints}
-						/>
-					</div>										
-				</div>
-				<div className="row">
+							bulletPoints={diggsBulletPoints} />
+					</div>	
 					<div className="col-4">
 						<CaseStudy caseStudyImage={GPSCAMLogo}
 							title="GPS CAM"
@@ -130,15 +138,15 @@ const CaseStudyCollection = () => {
 							title="NexPlore"
 							brief="3D Asbestos Risk Visualization & Management Web App"
 							bulletPoints={nexPloreBulletPoints} />
-					</div>
+					</div>									
+				</div>
+				<div className="row">
 					<div className="col-4">
 						<CaseStudy caseStudyImage={StarlitLogo}
 							title="Starlit"
 							brief="Endless Runner Mobile Game for Google Play Store"
 							bulletPoints={starlitBulletPoints} />
-					</div>					
-				</div>
-				<div className="row">
+					</div>	
 					<div className="col-4">
 						<CaseStudy caseStudyImage={WardenLogo}
 							title="Warden"
